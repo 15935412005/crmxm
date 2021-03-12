@@ -40,7 +40,7 @@ class Testqiyehoutai(unittest.TestCase):
         '''检查“返回首页”按钮'''
         login(self.driver).login()
         login(self.driver).qiyehoutai()
-        time.sleep(5)
+        time.sleep(6)
         self.driver.find_element_by_xpath("//div[@class='back-home']").click()
         time.sleep(5)
         url=print(self.driver.current_url)
